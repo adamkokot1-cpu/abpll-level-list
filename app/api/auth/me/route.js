@@ -1,3 +1,4 @@
+export const runtime = 'nodejs';
 import { getTokenFromRequest } from '@/lib/server/auth.js';
 import { findSession } from '@/lib/server/users.js';
 
@@ -13,3 +14,4 @@ export async function GET(request) {
     isAdmin: session.isAdmin === true
   });
 }
+

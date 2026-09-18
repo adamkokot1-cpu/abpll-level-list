@@ -1,3 +1,4 @@
+export const runtime = 'nodejs';
 import { readData, writeData } from '@/lib/server/data.js';
 import { requireAdmin, handleAuthError } from '@/lib/server/auth.js';
 
@@ -38,3 +39,4 @@ export async function POST(request) {
     return handleAuthError(error);
   }
 }
+

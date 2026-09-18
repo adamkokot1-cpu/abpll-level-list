@@ -1,3 +1,4 @@
+export const runtime = 'nodejs';
 import { readData, writeData, findRankedLevelByName } from '@/lib/server/data.js';
 import { requireAuth, handleAuthError } from '@/lib/server/auth.js';
 
@@ -41,3 +42,4 @@ export async function POST(request) {
     return handleAuthError(error);
   }
 }
+

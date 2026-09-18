@@ -1,3 +1,4 @@
+export const runtime = 'nodejs';
 import {
   readUsersStore,
   writeUsersStore,
@@ -35,3 +36,4 @@ export async function POST(request) {
     user: publicUser(user)
   });
 }
+

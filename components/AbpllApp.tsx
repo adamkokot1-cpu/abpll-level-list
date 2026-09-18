@@ -239,7 +239,7 @@ export default function AbpllApp() {
       setLeaderboardError(null);
       setLeaderboardEntries(await fetchLeaderboard());
     } catch {
-      setLeaderboardError('Cannot load leaderboard. Run npm start first.');
+      setLeaderboardError('Cannot load leaderboard right now.');
       setLeaderboardEntries([]);
     }
   }, []);
@@ -261,7 +261,7 @@ export default function AbpllApp() {
         return items;
       } catch {
         if (currentView === 'announcements') {
-          setAnnouncementsError('Cannot load announcements. Run npm start first.');
+          setAnnouncementsError('Cannot load announcements right now.');
         }
         return null;
       }
@@ -689,7 +689,7 @@ export default function AbpllApp() {
   return (
     <>
       <div className={cn('sync-status', !syncError && 'hidden')}>
-        Cannot reach server — run npm start
+        Cannot reach server — try again in a moment
       </div>
 
       <div className={cn('session-bar', !sessionUser && 'hidden')}>
@@ -749,7 +749,7 @@ export default function AbpllApp() {
                   }
                   setAnnouncementsUnread(false);
                 } catch {
-                  setAnnouncementsError('Cannot load announcements. Run npm start first.');
+                  setAnnouncementsError('Cannot load announcements right now.');
                   setAnnouncements([]);
                 }
                 setCurrentView('announcements');

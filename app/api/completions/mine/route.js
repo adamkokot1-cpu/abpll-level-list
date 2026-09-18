@@ -1,3 +1,4 @@
+export const runtime = 'nodejs';
 import { readData } from '@/lib/server/data.js';
 import { requireAuth, handleAuthError } from '@/lib/server/auth.js';
 
@@ -22,3 +23,4 @@ export async function GET(request) {
     return handleAuthError(error);
   }
 }
+

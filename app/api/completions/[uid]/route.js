@@ -1,3 +1,5 @@
+export const runtime = 'nodejs';
+
 import { readData, writeData } from '@/lib/server/data.js';
 import { requireAdmin, handleAuthError } from '@/lib/server/auth.js';
 import { removeCompletionByUid } from '@/lib/server/completions.js';
