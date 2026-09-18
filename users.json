@@ -1,0 +1,37 @@
+{
+  "users": [
+    {
+      "id": "user-admin",
+      "username": "AdminABP11LL",
+      "passwordHash": "23390e61fddb1e620ab016e6612fb91c:2048868d50443d461610ef95ca82981392cbd0fe0f9254177cd5fd253626f0468e6ee71711d5675ffc4f03bd0f68891d53c94b108266a4015c51ce2cb5889f56",
+      "isAdmin": true,
+      "createdAt": 1788179308720
+    },
+    {
+      "id": "user-1789234910844",
+      "username": "GDarisu",
+      "passwordHash": "6ed3f123dbb5759cb46adb6141957502:0de19c059d0f4a83fcd428638e886c8cd298c207455e3cc3535cdd672c2ef8b6fa88d440cb1f84589e6009855029a2b3eb23e37e14a58b95095cf96ebf533879",
+      "isAdmin": false,
+      "createdAt": 1789234910885
+    },
+    {
+      "id": "user-1789234977801",
+      "username": "Abpllgoats",
+      "passwordHash": "b6dcc5c0727eced91cb5e0bfc51c0bf1:ae0740e60a004c3a80ecfad245ea1a931d0c1cae93f9a439bd2663436fbf11f94f2de0ec55500e946ecb7f9ba5aee4f78e59c48afdbb508d938d629973687eaa",
+      "isAdmin": false,
+      "createdAt": 1789234977842
+    }
+  ],
+  "sessions": [
+    {
+      "token": "596f6a30acb018a1af448c1e8c094e44abf94475d24de62c2fa8023d2385b069",
+      "userId": "user-admin",
+      "username": "AdminABP11LL",
+      "isAdmin": true,
+      "expiresAt": 1791899032883
+    }
+  ],
+  "meta": {
+    "nonAdminAccountsCleared": true
+  }
+}
